@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "supervisor -w build ./build/server.js",
+    "dev": "tsc & nodemon dist/index",
     "build": "tsc"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^12.0.0",
-    "supervisor": "^0.12.0"
+    "@types/ramda": "github:types/npm-ramda#dist",
+    "nodemon": "^1.19.0"
+  },
+  "dependencies": {
+    "ramda": "^0.26.1"
   }
 }
